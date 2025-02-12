@@ -3,7 +3,7 @@
     background: linear-gradient(to right, black, #3b0000); /* Chuyển màu từ đen sang đỏ đậm */
 }
 
-/* Ẩn dropdown mặc định */
+/* Dropdown menu */
 .dropdown-menu {
     min-width: 250px;
     border-radius: 5px;
@@ -14,27 +14,25 @@
     visibility: hidden;
     transform: translateY(10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
-    position: absolute; /* Đảm bảo dropdown con không ảnh hưởng đến bố cục */
+
     top: 100%;
     left: 0;
     z-index: 1000;
 }
 
-/* Hiển thị dropdown khi hover */
+/* Dropdown mở khi hover */
 .navbar .dropdown:hover .dropdown-menu {
     display: block;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
-
 /* Tùy chỉnh các mục trong dropdown */
 .dropdown-item {
     color: white !important;
     padding: 12px 20px;
     font-size: 16px;
 }
-
 /* Hover item */
 .dropdown-item:hover {
     background-color: rgba(255, 255, 255, 0.1);
@@ -63,10 +61,6 @@
     transform: translateX(0);
 }
 
-/* Tăng độ rộng của dropdown để dễ nhìn hơn */
-.dropdown-menu {
-    min-width: 250px;
-}
 
 
 /* Căn phải phần Nhà tuyển dụng, Đăng nhập, Ngôn ngữ */
@@ -81,7 +75,7 @@
 
 /* Định dạng vùng chứa thanh tìm kiếm */
 .search-container {
-    background: linear-gradient(to right, black, #3b0000); /* Màu nền đậm */
+    background: linear-gradient(to right, black, #3b0000);
     padding: 20px 0;
 }
 
@@ -116,7 +110,7 @@
 
 /* Nút tìm kiếm */
 .search-btn {
-    background: #ED1B2F ;
+    background: #ED1B2F;
     color: white;
     font-size: 16px;
     padding: 10px 20px;
@@ -142,7 +136,7 @@
 .highlighted-image img {
     width: auto;
     height: auto;
-    max-height: 150px;  /* Giới hạn chiều cao */
+    max-height: 150px;
     max-width: 300px;
     border-radius: 8px;
 }
@@ -154,7 +148,7 @@
     left: 10px;
     background: orange;
     color: white;
-    padding: 5px 10px;
+padding: 5px 10px;
     border-radius: 5px;
     font-weight: bold;
 }
@@ -202,22 +196,22 @@
 .banner-background {
     width: 100%;
     height: 150px; 
-    background: linear-gradient(to right, black, #3b0000); /* Màu nền đậm */
+    background: linear-gradient(to right, black, #3b0000);
     position: absolute;
-    top: 100px; /* Điều chỉnh để nó dính sát phần navbar */
+    top: 100px;
     left: 0;
-    z-index: -1; /* Đưa xuống dưới phần nội dung */
+    z-index: -1;
 }
 
 /* Phần nền của background */
 .background {
     width: 100%;
-    height: 100vh; /* Chiều cao của viewport */
-    background: #e2e0e0; /* Màu nền */
+    height: 100vh;
+    background: #e2e0e0;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -2; /* Đưa xuống dưới phần nội dung */
+    z-index: -2;
 }
 
 
@@ -228,7 +222,7 @@
 }
 
 .main-container {
-    max-width: 70%;
+    width: 70%;
     margin: auto;
 }
 
@@ -244,7 +238,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white; /* Màu nền xám nhạt */
+    background: white;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -259,7 +253,7 @@
 .filter-btn {
     background: white;
     border: 1px solid #ddd;
-    border-radius: 20px; /* Bo góc giống trong ảnh */
+    border-radius: 20px;
     padding: 10px 15px;
     font-size: 14px;
     display: flex;
@@ -304,8 +298,8 @@
     background: linear-gradient(to right, black, #3b0000);
     color: white;
     padding: 40px 0;
-    justify-content: center; /* Căn giữa ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center;
+    align-items: center;
 }
 
 /* Logo */
@@ -329,61 +323,9 @@
     display: inline-block;
     color: white;
     font-size: 18px;
-    margin-right: 10px;
-    transition: 0.3s;
-}
-.social-icons a:hover {
-    color: #ffcc00;
 }
 
-/* Links */
-.footer-links, .footer-contact {
-    list-style: none;
-    padding: 0;
-}
-.footer-links li, .footer-contact li {
-    margin-bottom: 4px;
-}
-.footer-links a {
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-}
-.footer-links a:hover {
-    color: #ffcc00;
-}
 
-/* Dòng bản quyền */
-.footer-bottom {
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 20px;
-    color: #ccc;
-}
 
-/* ===== content ===== */
-.body-content {
-    background-color: #007bff;
-    width: auto;
-    height: auto;
-}
 
-.breadcrumb-container {
-    background: #f8f9fa;  /* Màu nền xám nhẹ */
-    padding: 10px 0;
-}
 
-.breadcrumb {
-    display: flex;
-    justify-content: left; /* Căn giữa ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    margin-bottom: 0;
-    font-size: 14px;
-}
-
-.breadcrumb-container {
-    background: #e2e0e0; /* Màu nền đậm */
-    border-top: 2px solid #ccc; /* Đường viền trên màu xám */
-    margin-top: 20px;
-    width: 100%;
-}

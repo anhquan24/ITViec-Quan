@@ -1,0 +1,309 @@
+.job-header {
+    
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.company-logo-in-content {
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+}
+
+.job-title h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.job-title h4 a {
+    color: blue;
+    font-size: 14px;
+}
+
+/* ======= Nút Apply ======= */
+.apply-btn {
+    background: #e60012;
+    color: white;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 36px;
+    width: 93%;
+    max-width: 600px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.apply-btn:hover {
+    background: #cc000f;
+}
+
+/* ======= Nút Yêu Thích (Trái Tim) ======= */
+.favorite-icon {
+    font-size: 36px;
+    color: #e60012;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* ======= Nút mở ngoài ======= */
+.external-link {
+    font-size: 14x;
+    color: blue;
+}
+
+/* 📌 Nút Apply */
+.job-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    position: relative;
+}
+
+.external-link {
+    font-size: 12px;
+    color: rgb(46, 46, 253);
+    text-decoration: none;
+}
+
+.external-link i {
+    transition: transform 0.2s ease-in-out;
+}
+
+.external-link:hover i {
+    transform: scale(1.1); /* Hiệu ứng khi hover */
+}
+
+.scrollable-section {
+    flex-grow: 1; /* Giúp nó chiếm hết phần trống còn lại */
+    overflow-y: auto;
+    padding-right: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.scrollable-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.scrollable-section li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* .card-content {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    max-height: 900px;
+    overflow: hidden;
+} */
+
+.card-content {
+    height: 95vh;
+    max-height: 900px;
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.card-content.fixed {
+    height: 95vh;
+    max-height: 900px;
+    position: fixed;
+    top: 20px;
+    right: 19.7%;
+    overflow-y: auto;
+}
+
+.card-content.bottom {
+    height: 95vh;
+    max-height: 900px;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden; /* Ngăn nội dung tràn ra */
+}
+
+.skills-job {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    position: relative;
+    gap: 10px;
+}
+
+.title-top-in-content {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.custom-list-in-content {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-list-in-content li {
+    position: relative;
+    padding-left: 20px;
+    font-size: 15px; 
+    color: black;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+/* Tạo dấu chấm đỏ */
+.custom-list-in-content li::before {
+    content: "•";
+    color: red;
+    font-size: 18px;
+    position: absolute;
+    font-weight: bold;
+    left: 0;
+    top: 0;
+}
+
+/* Định dạng danh sách con */
+.sub-list {
+    list-style: none; /* Bỏ dấu mặc định */
+    padding-left: 20px; /* Thụt vào so với danh sách cha */
+    font-weight: normal;
+    font-size: 13px;
+    color: #333;
+}
+
+/* Dấu đầu dòng danh sách con (nhỏ hơn và màu xám) */
+.sub-list-in-content li::before {
+    content: "◦"; /* Dấu tròn nhỏ */
+    color: #d9534f; /* Màu đỏ nhạt */
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.company-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.company-description {
+    font-size: 9px;
+    color: #666;
+}
+
+.view-company-link {
+    font-size: 12px;
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.view-company-link i {
+    margin-right: 5px;
+}
+
+.company-label {
+    font-size: 12px;
+    color: rgb(197, 196, 196);
+    margin-bottom: 0;
+}
+
+.company-value {
+    color: #000;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+.country-flag {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.favorite-icon {
+    font-size: 27px;
+}
+
+.favorite-icon:hover {
+    font-size: 28px;
+    transition: 0.3s ease;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-size: 16px;
+}
+
+.pagination button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    width: 30px; 
+    height: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.pagination button.active {
+    background-color: #fc0000d0;
+    color: white;
+    font-weight: bold;
+}
+
+.pagination button:hover {
+    background-color: lightgray;
+}
+
+.pagination button:disabled {
+    color: gray;
+    cursor: not-allowed;
+}
+
+.navbar-container {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.logo-navbar {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.logo-navbar .navbar-brand {
+    margin-right: 20px; /* Tạo khoảng cách giữa logo và menu */
+}

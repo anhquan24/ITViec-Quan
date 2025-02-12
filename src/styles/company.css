@@ -1,0 +1,149 @@
+.content-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.jobs-list {
+    flex: 1;
+    max-width: calc(45% - 10px); /* Chiếm 50% chiều rộng trừ đi khoảng cách */
+}
+
+.detail-company {
+    flex: 1;
+    max-width: calc(65% - 10px); /* Chiếm 50% chiều rộng trừ đi khoảng cách */
+}
+
+.job-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%; /* Đảm bảo thẻ công việc chiếm toàn bộ chiều rộng */
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.job-card-superhot {
+    background: #fff6f2; /* Màu nền thứ nhất */
+}
+
+.job-card-hot {
+    background: #ffffff; /* Màu nền thứ hai */
+}
+
+.super-hot {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgb(218, 0, 0);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.super-hot svg {
+    margin-right: 5px;
+}
+
+.posted-time {
+    color: gray;
+    font-size: 14px;
+}
+
+.job-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.company img {
+    width: 40px;
+    height: 40px;
+}
+
+.company-name {
+    font-weight: bold;
+}
+
+.salary {
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.location {
+    color: #555;
+    margin-top: 10px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tags span {
+    background: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.benefits {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.benefits div {
+    color: black;
+    margin: 5px 0;
+}
+
+.benefits div::before {
+    content: "•";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+}
+
+/* Badge HOT */
+.hot-badge {
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(5%, 30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Mũi nhọn tam giác bên dưới HOT */
+.hot-badge::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid orange;
+}

@@ -1,4 +1,7 @@
 import React from 'react';
+import '../styles/navbar.css';
+
+
 
 const Navbar = () => {
     return (
@@ -17,7 +20,7 @@ const Navbar = () => {
                                 All Jobs
                             </a>
                             <ul className="dropdown-menu ">
-                                <li><a className="dropdown-item text-white-50 " href="#">Jobs by Skill</a></li>
+                                <li><a className="dropdown-item  " href="#">Jobs by Skill</a></li>
                                 <li><a className="dropdown-item" href="#">Jobs by Title</a></li>
                                 <li><a className="dropdown-item" href="#">Jobs by Company</a></li>
                                 <li><a className="dropdown-item" href="#">Jobs by City</a></li>

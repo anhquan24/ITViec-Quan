@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../styles/highlightedEmployer.css';
 const HighlightedEmployer = () => {
     return (
         
@@ -7,7 +7,7 @@ const HighlightedEmployer = () => {
             <div className="row">
                 <div className="col-md-4">
                     <div className="highlighted-image">
-                        <img src="banner.png" alt="Nhà Tuyển Dụng Nổi Bật" className="img-fluid" />
+                        <img src="logo_Thoughtworks.jpeg" alt="Nhà Tuyển Dụng Nổi Bật" className="img-fluid" />
                         <span className="highlighted-label">Company Spotlight</span>
                     </div>
                 </div>
