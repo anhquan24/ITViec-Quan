@@ -11,7 +11,7 @@ const Footer = () => {
                 </ol>
             </div>
         </nav>
-    {/* Footer */}
+
         <footer className="footer mt-auto py-4 bg-dark text-white">
             <div className="container main-container">
                 <div className="row d-flex flex-wrap justify-content-between">

@@ -1,9 +1,8 @@
-/* Navbar */
+
 .custom-navbar {
-    background: linear-gradient(to right, black, #3b0000); /* Chuyển màu từ đen sang đỏ đậm */
+    background: linear-gradient(to right, black, #3b0000); 
 }
 
-/* Ẩn dropdown mặc định */
 .dropdown-menu {
     min-width: 250px;
     border-radius: 5px;
@@ -14,13 +13,13 @@
     visibility: hidden;
     transform: translateY(10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
-    position: absolute; /* Đảm bảo dropdown con không ảnh hưởng đến bố cục */
+
     top: 100%;
     left: 0;
     z-index: 1000;
 }
 
-/* Hiển thị dropdown khi hover */
+
 .navbar .dropdown:hover .dropdown-menu {
     display: block;
     opacity: 1;
@@ -28,20 +27,20 @@
     transform: translateY(0);
 }
 
-/* Tùy chỉnh các mục trong dropdown */
+
 .dropdown-item {
     color: white !important;
     padding: 12px 20px;
     font-size: 16px;
 }
 
-/* Hover item */
+
 .dropdown-item:hover {
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
 }
 
-/* Hiển thị dropdown con khi hover */
+
 .dropdown-submenu {
     position: relative;
 }
@@ -63,18 +62,19 @@
     transform: translateX(0);
 }
 
-/* Tăng độ rộng của dropdown để dễ nhìn hơn */
+/* Tăng độ rộng của dropdown */
 .dropdown-menu {
     min-width: 250px;
 }
 
 
-/* Căn phải phần Nhà tuyển dụng, Đăng nhập, Ngôn ngữ */
+
 .navbar-nav:last-child {
     margin-left: auto;
 }
 
-/* Tăng khoảng cách giữa các mục */
 .nav-link {
     padding: 10px 15px;
 }
+
+

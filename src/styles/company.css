@@ -5,23 +5,34 @@
 }
 
 .jobs-list {
-    flex: 1;
-    max-width: calc(45% - 10px); /* Chiếm 50% chiều rộng trừ đi khoảng cách */
+    
+    width: 550px; /* Chiều ngang cố định */
+    
 }
 
 .detail-company {
+    
     flex: 1;
-    max-width: calc(65% - 10px); /* Chiếm 50% chiều rộng trừ đi khoảng cách */
+  
+    position: sticky;
+    top: 0;
+    
 }
 
 .job-card {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    width: 100%; /* Đảm bảo thẻ công việc chiếm toàn bộ chiều rộng */
+    width: 100%; 
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .job-card-superhot {
@@ -146,4 +157,34 @@
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 5px solid orange;
+}
+
+/* Hiệu ứng khi chọn công việc */
+.selected-job {
+    border: 2px solid red;
+    position: relative;
+}
+
+.selected-job::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -1px;
+    width: 6px;
+    height: 95%;
+    border-radius: 10px;
+    background-color: #ed1b2f;
+}
+
+.selected-job::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #ed1b2f;
+    transform: rotate(90deg);
 }

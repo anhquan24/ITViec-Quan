@@ -1,5 +1,4 @@
 .job-header {
-    
     display: flex;
     align-items: center;
     gap: 15px;
@@ -41,7 +40,7 @@
     background: #cc000f;
 }
 
-/* ======= Nút Yêu Thích (Trái Tim) ======= */
+
 .favorite-icon {
     font-size: 36px;
     color: #e60012;
@@ -52,9 +51,9 @@
     transform: translateY(-50%);
 }
 
-/* ======= Nút mở ngoài ======= */
+
 .external-link {
-    font-size: 14x;
+    font-size: 14px;
     color: blue;
 }
 
@@ -81,15 +80,22 @@
     transform: scale(1.1); /* Hiệu ứng khi hover */
 }
 
+.detail-company {
+    position: sticky;
+    top: 20px;
+    max-height: 8000vh; 
+    height: 800px;
+    padding-right: 10px;
+}
+
 .scrollable-section {
-    flex-grow: 1; /* Giúp nó chiếm hết phần trống còn lại */
+    max-height: calc(80vh - 40px); 
     overflow-y: auto;
     padding-right: 10px;
     border-top: 1px solid #ddd;
     margin-top: 10px;
     padding-top: 10px;
 }
-
 .scrollable-section ul {
     list-style-type: none;
     padding: 0;
@@ -101,17 +107,8 @@
     color: #333;
 }
 
-/* .card-content {
-    display: flex;
-    flex-direction: column;
-    height: 95vh;
-    max-height: 900px;
-    overflow: hidden;
-} */
-
 .card-content {
-    height: 95vh;
-    max-height: 900px;
+    height: 100%; /* Chiều cao cố định */
     width: 100%;
     background: white;
     border-radius: 8px;
@@ -119,31 +116,15 @@
     padding: 20px;
     position: relative;
     margin-top: 20px;
+    position: sticky;
+    top: 20px; /* Giữ phần chi tiết dính vào trang khi cuộn */
 }
-
-.card-content.fixed {
-    height: 95vh;
-    max-height: 900px;
-    position: fixed;
-    top: 20px;
-    right: 19.7%;
-    overflow-y: auto;
-}
-
-.card-content.bottom {
-    height: 95vh;
-    max-height: 900px;
-    position: absolute;
-    bottom: 0px;
-}
-
-
 
 .card-body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    overflow: hidden; /* Ngăn nội dung tràn ra */
+    overflow: hidden;
 }
 
 .skills-job {
@@ -184,19 +165,19 @@
     top: 0;
 }
 
-/* Định dạng danh sách con */
+
 .sub-list {
-    list-style: none; /* Bỏ dấu mặc định */
-    padding-left: 20px; /* Thụt vào so với danh sách cha */
+    list-style: none; 
+    padding-left: 20px; 
     font-weight: normal;
     font-size: 13px;
     color: #333;
 }
 
-/* Dấu đầu dòng danh sách con (nhỏ hơn và màu xám) */
+
 .sub-list-in-content li::before {
-    content: "◦"; /* Dấu tròn nhỏ */
-    color: #d9534f; /* Màu đỏ nhạt */
+    content: "◦"; 
+    color: #d9534f; 
     font-size: 18px;
     position: absolute;
     left: 0;
@@ -305,5 +286,5 @@
 }
 
 .logo-navbar .navbar-brand {
-    margin-right: 20px; /* Tạo khoảng cách giữa logo và menu */
+    margin-right: 20px; 
 }

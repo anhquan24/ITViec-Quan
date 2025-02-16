@@ -1,4 +1,4 @@
-/* ===== Banner Nhà Tuyển Dụng Nổi Bật ===== */
+
 .highlighted-employer {
     background: #fff;
     padding: 20px;
@@ -6,7 +6,7 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Hình ảnh tuyển dụng */
+
 .highlighted-image {
     position: relative;
 }
@@ -19,7 +19,7 @@
     border-radius: 8px;
 }
 
-/* Nhãn "Nhà Tuyển Dụng Nổi Bật" */
+
 .highlighted-label {
     position: absolute;
     top: 10px;
@@ -31,7 +31,7 @@
     font-weight: bold;
 }
 
-/* Thông tin tuyển dụng */
+
 .highlighted-info h4 {
     font-weight: bold;
 }
@@ -51,7 +51,7 @@
     font-weight: bold;
 }
 
-/* Danh sách công việc nổi bật */
+
 .job-list {
     list-style: none;
     padding: 0;

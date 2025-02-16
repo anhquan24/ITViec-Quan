@@ -7,8 +7,13 @@ import FilterBar from './components/FilterBar';
 import Footer from './components/Footer';
 import Company from './components/Company';
 import DetailCompany from './components/DetailCompany';
+import Pagination from './components/Pagination';
 
 import './styles/background.css';
+import './styles/style.css';
+
+
+
 
 const App = () => {
     return (
@@ -25,6 +30,8 @@ const App = () => {
                     <Company />
                     <DetailCompany />
                 </div>
+               
+                <Pagination />
             </div>
             <Footer />
         </div>

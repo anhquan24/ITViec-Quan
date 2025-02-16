@@ -1,6 +1,4 @@
 
-/* ===== Footer ===== */
-/* Footer */
 .footer {
     background: linear-gradient(to right, black, #3b0000);
     color: white;
@@ -9,7 +7,6 @@
     align-items: center;
 }
 
-/* Logo */
 .footer-logo img {
     width: 120px;
 }
@@ -19,13 +16,11 @@
     margin-top: 5px;
 }
 
-/* Cột footer */
 .footer .col-md-2, .footer .col-md-3 {
     min-width: 200px;
     margin-bottom: 20px;
 }
 
-/* Social icons */
 .social-icons a {
     display: inline-block;
     color: white;
@@ -54,14 +49,14 @@
     color: #ffcc00;
 }
 
-/* Dòng bản quyền */
+
 .footer-bottom {
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 20px;
     color: #ccc;
 }
-/* ===== content ===== */
+
 .body-content {
     position: relative;
     margin-top: 20px;

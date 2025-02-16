@@ -1,6 +1,5 @@
 import React from 'react';
-import '../styles/navbar.css';
-
+// import '../styles/navbar.css';
 
 
 const Navbar = () => {
@@ -13,14 +12,14 @@ const Navbar = () => {
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav mx-auto">
+                <div className="collapse navbar-collapse " id="navbarNav">
+                    <ul className="navbar-nav me-auto">
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" id="jobsDropdown" role="button" data-bs-toggle="dropdown" >
                                 All Jobs
                             </a>
-                            <ul className="dropdown-menu ">
-                                <li><a className="dropdown-item  " href="#">Jobs by Skill</a></li>
+                            <ul className="dropdown-menu">
+                                <li><a className="dropdown-item" href="#">Jobs by Skill</a></li>
                                 <li><a className="dropdown-item" href="#">Jobs by Title</a></li>
                                 <li><a className="dropdown-item" href="#">Jobs by Company</a></li>
                                 <li><a className="dropdown-item" href="#">Jobs by City</a></li>
