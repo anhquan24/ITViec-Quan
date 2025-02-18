@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Navbar from './components/Navbar';
 import SearchBar from './components/SearchBar';
 import HighlightedEmployer from './components/HighlightedEmployer';
@@ -10,14 +11,15 @@ import DetailCompany from './components/DetailCompany';
 import Pagination from './components/Pagination';
 
 import './styles/background.css';
-import './styles/style.css';
+import './styles/navbars.css';
+
 
 
 
 
 const App = () => {
     return (
-        <div>
+        <div >
             <Navbar />
             <div className="banner-background"></div>
             <div className="background"></div>

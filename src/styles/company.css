@@ -46,7 +46,7 @@
 .super-hot {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 0px;
     background: rgb(218, 0, 0);
     color: white;
     font-size: 12px;
@@ -58,6 +58,36 @@
 .super-hot svg {
     margin-right: 5px;
 }
+/* HOT */
+.hot-badge {
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(5%, 30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.hot-badge::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid orange;
+}
 
 .posted-time {
     color: gray;
@@ -65,7 +95,7 @@
 }
 
 .job-title {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     margin: 10px 0;
 }
@@ -82,7 +112,8 @@
 }
 
 .company-name {
-    font-weight: bold;
+    font-weight: normal;
+    
 }
 
 .salary {
@@ -128,36 +159,7 @@
     width: 1em;
 }
 
-/* Badge HOT */
-.hot-badge {
-    background: orange;
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    padding: 4px 10px;
-    border-radius: 4px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(5%, 30%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
 
-/* Mũi nhọn tam giác bên dưới HOT */
-.hot-badge::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    right: 8px;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid orange;
-}
 
 /* Hiệu ứng khi chọn công việc */
 .selected-job {

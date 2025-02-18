@@ -10,11 +10,11 @@ const DetailCompany = ({ job }) => {
             <div className="card card-content">
                 <div className="card-body">
                     <div className="job-header">
-                        <img src={job.company.image} alt={job.company.name} className="company-logo-in-content" />
+                        <img src={job.company.logo} alt={job.company.logo} className="company-logo-in-content" />
                         <div className="job-info">
                             <h3 className="job-title">
                                 {job.title}
-                                <a href="#" className="external-link"><i className="fa-solid fa-up-right-from-square"></i></a>
+                                <a href="#" className="external-link">  <i className="fa-solid fa-up-right-from-square"></i></a>
                             </h3>
                             <p className="company-name">{job.company.name}</p>
                             <p className="salary"><i className="fa-solid fa-dollar-sign"></i> <a href="#">Sign in to view salary</a></p>

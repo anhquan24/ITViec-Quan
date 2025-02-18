@@ -46,16 +46,16 @@ const Company = () => {
                         <h2 className="job-title">{job.title}</h2>
 
                         <div className="company">
-                            <img alt={`${job.company.name} Logo`} className="border-radius-normal border-solid box-shadow-normal" src={job.company.logo} height="48" width="48" />
+                            <img alt={`${job.company.name} Logo`} className="border-radius-normal box-shadow-normal" src={job.company.logo} height="48" width="48" />
                             <p className="company-name">{job.company.name}</p>
                         </div>
 
                         <div className="salary">
-                            💲 <span>Sign in to view salary</span>
+                        <i className="fa-solid fa-dollar-sign"></i> <span>Sign in to view salary</span>
                         </div>
 
                         <div className="location">
-                            🏢 {job.workplace} <span>📍 {job.location}</span>
+                        <i className="fa-solid fa-building"></i> {job.workplace} <span> <i className="fa-solid fa-location-dot"></i> {job.location}</span>
                         </div>
 
                         <div className="tags">

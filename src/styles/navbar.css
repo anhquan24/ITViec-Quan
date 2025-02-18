@@ -9,9 +9,9 @@
     background-color: rgb(18, 18, 18);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border: none;
-    opacity: 0;
+    /* opacity: 0;
     visibility: hidden;
-    transform: translateY(10px);
+    transform: translateY(10px); */
     transition: opacity 0.3s ease, transform 0.3s ease;
 
     top: 100%;

@@ -1,4 +1,4 @@
-/* Phần nền dưới banner */
+
 .banner-background {
     width: 100%;
     height: 150px; 
@@ -21,7 +21,7 @@
 }
 
 
-/* Column */
+
 .column-background {
     height: auto;
     width: 90%;
