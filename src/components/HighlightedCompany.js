@@ -1,7 +1,7 @@
 import React from 'react';  
-import '../styles/highlightedEmployer.css';  
+import '../styles/highlightedCompany.css';  
 
-const HighlightedEmployer = () => {  
+const HighlightedCompany = () => {  
     return (  
         <div className="container-spotlight">  
             <div className="d-flex flex-column flex-xl-row align-items-center spotlight">  
@@ -43,4 +43,4 @@ const HighlightedEmployer = () => {
     );  
 };  
 
-export default HighlightedEmployer;
+export default HighlightedCompany;

@@ -47,14 +47,19 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark custom-navbar">
             <div className="container">
+                {/* Logo */}
                 <a className="navbar-brand" href="#">
                     <img src="logo.png" alt="Logo ITviec" height="40" />
                 </a>
+
+
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span className="navbar-toggler-icon"></span>
                 </button>
+
                 <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav me-auto">
+                    {/* Các mục bên trái */}
+                    <ul className="navbar-nav me-auto left-menu">
                         {menuData.map((menu, index) => (
                             <li 
                                 key={index} 
@@ -102,9 +107,11 @@ const Navbar = () => {
                                                     {menu.subItems[activeSubmenuIndex].subItems.map((item, itemIndex) => (
                                                         <li key={itemIndex}>{item}</li>
                                                     ))}
-                                                    <li className="view-all">
-                                                        <a href="/" className="view-all-link">View all</a>
-                                                    </li>
+                                                    {menu.subItems[activeSubmenuIndex].subItems.length > 8 && (
+                                                        <li className="view-all">
+                                                            <a href="/" className="view-all-link">View all</a>
+                                                        </li>
+                                                    )}
                                                 </div>
                                             )}
                                     </ul>
@@ -112,7 +119,9 @@ const Navbar = () => {
                             </li>
                         ))}
                     </ul>
-                    <ul className="navbar-nav">
+
+                    {/* Các mục bên phải */}
+                    <ul className="navbar-nav right-menu">
                         <li className="nav-item"><a className="nav-link" href="#">For Employers</a></li>
                         <li className="nav-item"><a className="nav-link" href="#">Sign in/Sign up</a></li>
                         <li className="nav-item d-flex align-items-center">

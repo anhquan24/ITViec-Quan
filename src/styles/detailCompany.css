@@ -1,3 +1,4 @@
+
 .job-header {
     display: flex;
     align-items: center;
@@ -57,7 +58,7 @@
     color: blue;
 }
 
-/* 📌 Nút Apply */
+/* Nút Apply */
 .job-footer {
     display: flex;
     align-items: center;

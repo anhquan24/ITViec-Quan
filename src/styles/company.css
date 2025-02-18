@@ -1,13 +1,21 @@
+
 .content-container {
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .jobs-list {
     
-    width: 550px; /* Chiều ngang cố định */
+    width: 100%; /* Thay đổi chiều rộng cho responsive */
+    max-width: 550px; /* Chiều rộng tối đa */
     
+}
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Đặt các phần tử theo chiều dọc */
+    }
 }
 
 .detail-company {

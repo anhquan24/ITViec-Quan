@@ -2,7 +2,7 @@ import React from 'react';
 
 import Navbar from './components/Navbar';
 import SearchBar from './components/SearchBar';
-import HighlightedEmployer from './components/HighlightedEmployer';
+import HighlightedCompany from './components/HighlightedCompany';
 import JobSection from './components/JobSection';
 import FilterBar from './components/FilterBar';
 import Footer from './components/Footer';
@@ -25,7 +25,7 @@ const App = () => {
             <div className="background"></div>
             <SearchBar />
             <div className="container main-container">
-                <HighlightedEmployer />
+                <HighlightedCompany />
                 <JobSection />
                 <FilterBar />
                 <div className="content-container">
