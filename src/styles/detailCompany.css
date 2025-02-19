@@ -22,7 +22,7 @@
     font-size: 14px;
 }
 
-/* ======= Nút Apply ======= */
+
 .apply-btn {
     background: #e60012;
     color: white;
@@ -58,7 +58,7 @@
     color: blue;
 }
 
-/* Nút Apply */
+
 .job-footer {
     display: flex;
     align-items: center;
@@ -78,7 +78,7 @@
 }
 
 .external-link:hover i {
-    transform: scale(1.1); /* Hiệu ứng khi hover */
+    transform: scale(1.1); 
 }
 
 .detail-company {
@@ -92,10 +92,14 @@
 .scrollable-section {
     max-height: calc(80vh - 40px); 
     overflow-y: auto;
+    overflow-x: hidden;
     padding-right: 10px;
     border-top: 1px solid #ddd;
     margin-top: 10px;
     padding-top: 10px;
+    max-height: 56vh;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc #f0f0f0;
 }
 .scrollable-section ul {
     list-style-type: none;
@@ -109,7 +113,7 @@
 }
 
 .card-content {
-    height: 100%; /* Chiều cao cố định */
+    height: 100%; 
     width: 100%;
     background: white;
     border-radius: 8px;
@@ -118,7 +122,7 @@
     position: relative;
     margin-top: 20px;
     position: sticky;
-    top: 20px; /* Giữ phần chi tiết dính vào trang khi cuộn */
+    top: 20px; 
 }
 
 .card-body {
@@ -134,6 +138,9 @@
     margin-top: 15px;
     position: relative;
     gap: 10px;
+
+    
+    
 }
 
 .title-top-in-content {
@@ -155,7 +162,7 @@
     align-items: center;
 }
 
-/* Tạo dấu chấm đỏ */
+
 .custom-list-in-content li::before {
     content: "•";
     color: red;
@@ -187,8 +194,8 @@
 }
 
 .company-name {
-    font-weight: bold;
-    font-size: 20px;
+    font-weight: normal;
+    font-size: 18px;
 }
 
 .company-description {
@@ -288,4 +295,12 @@
 
 .logo-navbar .navbar-brand {
     margin-right: 20px; 
+}
+
+.top-reasons,
+.job-des,
+.skills-ex
+{
+    border-top: 1px dashed #a1a1a1 ;
+    padding-top: 15px;
 }

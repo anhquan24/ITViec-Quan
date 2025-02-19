@@ -35,33 +35,33 @@ const DetailCompany = ({ job }) => {
             
                         <div className="skills-job">
                             <div>Skills:</div>
-                            <div className="job-tags">
+                            <div className="tags">
                                 {job.tags.map((tag, index) => (
                                     <span key={index} className="badge-tag text-dark">{tag}</span>
                                 ))}
                             </div>
                         </div>
 
-                        <hr className="dot-hr" />
-
+                      
+                       <div className='top-reasons mt-3'>
                         <h3 className="title-top-in-content">Top 3 reasons to join us</h3>
                         <ul className="custom-list-in-content">
                             {job.reasons.map((reason, index) => (
                                 <li key={index}>{reason}</li>
                             ))}
                         </ul>  
+                        </div>
                         
-                        <hr className="dot-hr" />
-
+                        <div className='job-des mt-3'>
                         <h3 className="title-top-in-content">Job description</h3>
                         <ul className="custom-list-in-content">
                             {job.description.map((desc, index) => (
                                 <li key={index}>{desc}</li>
                             ))}
                         </ul>  
+                        </div>
 
-                        <hr className="dot-hr" />
-
+                        <div className='skills-ex mt-3'>
                         <h3 className="title-top-in-content">Your skills and experience</h3>
                         <h4 className="title-top-in-content" style={{ fontSize: 'medium' }}>Trình độ học vấn:</h4> 
                         <ul className="custom-list-in-content">
@@ -69,7 +69,7 @@ const DetailCompany = ({ job }) => {
                                 <li key={index}>{req}</li>
                             ))}
                         </ul>
-
+                        </div>
                         <hr />
                         <div className="company-card">
                             <div className="d-flex justify-content-between align-items-center">

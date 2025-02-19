@@ -50,21 +50,23 @@ const Company = () => {
                             <p className="company-name">{job.company.name}</p>
                         </div>
 
-                        <div className="salary">
+                        <div className="salary salary-cross">
                         <i className="fa-solid fa-dollar-sign"></i> <span>Sign in to view salary</span>
                         </div>
-
+                        
                         <div className="location">
-                        <i className="fa-solid fa-building"></i> {job.workplace} <span> <i className="fa-solid fa-location-dot"></i> {job.location}</span>
-                        </div>
+                        <i className="fa-solid fa-building"></i> {job.workplace} <br></br> <i className="fa-solid fa-location-dot"></i> {job.location}
+                        
 
-                        <div className="tags">
+                        <div className="tags tags-cross">
                             {job.tags.map((tag, index) => (
                                 <span key={index}>{tag}</span>
                             ))}
                         </div>
+                        </div>
+                       
 
-                        <ul className="benefits">
+                        <ul className="benefits ">
                             {job.benefits.map((benefit, index) => (
                                 <li key={index}>{benefit}</li>
                             ))}

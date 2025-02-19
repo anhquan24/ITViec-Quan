@@ -11,7 +11,7 @@ import DetailCompany from './components/DetailCompany';
 import Pagination from './components/Pagination';
 
 import './styles/background.css';
-import './styles/navbars.css';
+// import './styles/navbars.css';
 
 
 

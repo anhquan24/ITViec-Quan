@@ -8,13 +8,13 @@
 
 .jobs-list {
     
-    width: 100%; /* Thay đổi chiều rộng cho responsive */
-    max-width: 550px; /* Chiều rộng tối đa */
+    width: 100%; 
+    max-width: 500px; 
     
 }
 @media (max-width: 768px) {
     .content-container {
-        flex-direction: column; /* Đặt các phần tử theo chiều dọc */
+        flex-direction: column; 
     }
 }
 
@@ -123,53 +123,79 @@
     font-weight: normal;
     
 }
-
+.company-name:hover {
+   text-decoration: underline;
+}
 .salary {
-    color: #007bff;
+    color: #3a3a3a;
     font-weight: bold;
     margin-top: 10px;
     cursor: pointer;
+    text-decoration: underline;
+    
+    
+}
+.salary-cross{
+border-bottom: 1px dashed #a1a1a1 ;
+    padding-bottom: 15px;
 }
 
 .location {
     color: #555;
     margin-top: 10px;
+    
 }
 
 .tags {
     display: flex;
     gap: 10px;
     margin-top: 10px;
+   
+    
+}
+.tags-cross{
+     border-bottom: 1px dashed #a1a1a1 ;
+    padding-bottom: 15px;
 }
 
+
+
 .tags span {
-    background: #f1f1f1;
+    font-weight: normal;
+    border: 1px solid #bebebe;
+    background: #ffffff;
     padding: 5px 10px;
     border-radius: 15px;
     font-size: 12px;
 }
-
+.tags span:hover{
+    border: 1px solid ;
+}
 .benefits {
+    font-size: 15px;
+    font-weight: 600;
     margin-top: 10px;
     padding-left: 20px;
+    
 }
 
-.benefits div {
+.benefits li {
     color: black;
     margin: 5px 0;
 }
 
-.benefits div::before {
-    content: "•";
+.benefits li::marker {
+    content: "•  ";
     color: red;
+    font-size: 18px;
+    position: absolute;
     font-weight: bold;
-    display: inline-block;
-    width: 1em;
+    left: 0;
+    top: 0;
 }
 
 
 
-/* Hiệu ứng khi chọn công việc */
 .selected-job {
     border: 2px solid red;
     position: relative;
