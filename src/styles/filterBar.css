@@ -1,4 +1,27 @@
+.range-slider {
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    accent-color: rgb(27, 162, 6);
+   
+}
 
+.range-slider::-webkit-slider-thumb {
+    pointer-events: auto;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #14f06c;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.text-start {
+    text-align: left !important;
+    width: 100%;
+    display: block;
+}
 .filter-bar {
     display: flex;
     justify-content: space-between;
@@ -28,7 +51,7 @@
     align-items: center;
     gap: 5px;
     font-weight: 500;
-    color: black;
+    color: rgb(101, 101, 101);
 }
 
 .filter-control {
@@ -44,24 +67,11 @@
     color: black;
 }
 
-.filter-btn:hover, .filter-control:hover {
-    background: #e9ecef;
+.filter-btn:hover {
+    border: 1px solid #000;
+    color: #000;
 }
 
-.drop-level,
-.drop-working-models,
-.drop-salary,
-.drop-industry {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    background-color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 10px;
-    width: 300px;
-}
 
 .drop-industry {
     height: 260px;
@@ -99,6 +109,20 @@
     margin-bottom: 6px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+.drop-level,
+.drop-working-models,
+.drop-salary,
+.drop-industry {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    width: 300px;
 }
 
 .checkbox-level {
@@ -147,6 +171,34 @@
     padding: 3px;
 }
 
+
+
+.btn-reset-filter {
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #0048ff;
+    font-weight: 600;
+}
+
+.btn-apply-filter {
+    border: none;
+    outline: none;
+    padding: 10px 80px;
+    background-color: #ed1b2f;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-apply-filter:hover {
+    opacity: 0.8;
+}
+
+.btn-filter-skill:hover {
+    border: 1px solid #ed1b2f;
+    background-color: #FFDFDF;
+    color: #ed1b2f;
+}
 .filter-industry {
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -185,9 +237,6 @@
     font-size: 14px;
 }
 
-.filter-item:hover {
-    background-color: #f5f5f5;
-}
 
 .filter-list::-webkit-scrollbar {
     width: 6px;
@@ -202,29 +251,24 @@
     background-color: #888;
 }
 
-.btn-reset-filter {
-    border: none;
-    outline: none;
-    background-color: white;
-    color: #0E2EED;
-    font-weight: 600;
-}
+@media (max-width: 1179px) {
+    .filters {
+        display: none; 
+    }
 
-.btn-apply-filter {
-    border: none;
-    outline: none;
-    padding: 10px 80px;
-    background-color: #ed1b2f;
-    color: white;
-    border-radius: 5px;
-}
+    .filter-control {
+        width: 100%; 
+        text-align: center;
+        padding: 15px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 10px solid #000000;
+    }
 
-.btn-apply-filter:hover {
-    opacity: 0.8;
-}
-
-.btn-filter-skill:hover {
-    border: 1px solid #ed1b2f;
-    background-color: #FFDFDF;
-    color: #ed1b2f;
+    .filter-control:hover {
+        opacity: 0.8;
+    }
 }

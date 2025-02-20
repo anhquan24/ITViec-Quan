@@ -24,6 +24,7 @@ const Company = () => {
 
     return (
         <div className="content-container">
+              
             <div className="jobs-list">
                 {jobs.map(job => (
                     <div 

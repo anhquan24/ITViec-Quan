@@ -6,7 +6,7 @@
     align-items: center;
     background-color: #f8f9fa;
   
-   
+   position: relative;
 }
 
 .spotlight {
@@ -37,6 +37,7 @@
 .img-slide img {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+
    
 }
 
@@ -56,16 +57,16 @@
 }
  
 
-
 .job-list p {
+   
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 14px;
-    color: #151515;
+    font-size: 12px;
+    color: #000000;
     margin: 5px 0;
   
-    padding: 0 50px;
+   
     
 }
 
@@ -75,18 +76,57 @@
     width: 100px;
     height: 100px;
     top: 10%;
+    bottom: 10%;
     background-color: white;
     padding: 5px;
     border: 1px solid gray;
-    border-radius: 9px;
+    border-radius: 7px;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1; 
 }
 
-@media (max-width: 768px) {
-   .cross{
-    display: none;
-   }
+@media (max-width: 1179px) {
+    .cross {
+        display: none;
+    }
+
+    .job-list p {
+        flex: 1 1 100%;
+    }
+
+    .info-slide {
+        flex: 1 1 100%; /* Chiếm toàn bộ chiều ngang */
+        display: flex;
+        flex-direction: column; /* Đảm bảo nội dung hiển thị theo cột */
+        align-items: flex-start;
+        padding: 10px; /* Thêm khoảng cách */
+    }
+
+    .spotlight {
+        flex-direction: column; /* Chuyển hướng từ hàng ngang sang cột */
+        text-align: center;
+        padding: 20px;
+    }
+
+    .img-slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .logo {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100px; /* Giảm kích thước logo */
+        height: 100px;
+        margin: 10px auto; /* Căn giữa */
+    }
+
+    .job-list {
+        text-align: left;
+        padding: 10px;
+    }
 }

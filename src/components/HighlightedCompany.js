@@ -41,7 +41,7 @@ const HighlightedCompany = () => {
         <div className="container-spotlight d-flex justify-content-center align-items-center">
             <div className="d-flex flex-column flex-xl-row align-items-center spotlight">
            
-                <div className="img-slide ">
+                <div className="img-slide  ">
                     <img src={companyData.imgcompany} alt="Company" width={300} height={200} />
                     <span className="company-spotlight">Company Spotlight</span>
                 </div>
@@ -56,7 +56,7 @@ const HighlightedCompany = () => {
                         <a href="#" className="text-decoration-none text-primary">
                             View {companyData.joblist.length} jobs <i className="fas fa-chevron-right ms-1"></i>
                         </a>
-                        <div className="logo">
+                        <div className="logo mt-2 mb-4">
                             <a href="#">
                                 <img src={companyData.logocompany} alt="logo" width={100} />
                             </a>
@@ -65,7 +65,7 @@ const HighlightedCompany = () => {
                 </div>
 
          <div className='cross pr-5'></div>
-                <div className="col-md-4">
+                <div className="col-md-4-pr-3">
                     <div className="job-list">
                         {companyData.joblist.map((job, index) => (
                             <p key={index}>
