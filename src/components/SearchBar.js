@@ -70,6 +70,7 @@ const SearchBar = () => {
                             </>
                         )}
                     </div>
+                 
                     <input
                         type="text"
                         className="form-control search-input"

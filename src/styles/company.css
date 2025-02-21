@@ -12,10 +12,15 @@
     max-width: 500px; 
     
 }
-@media (max-width: 768px) {
+@media (max-width: 1179px) {
     .content-container {
         flex-direction: column; 
     }
+    .jobs-list {
+        max-width: 100%; 
+        
+    }
+
 }
 
 .detail-company {
