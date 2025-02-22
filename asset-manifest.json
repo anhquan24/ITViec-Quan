@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ITViec-Quan/static/css/main.cc492843.css",
+    "main.js": "/ITViec-Quan/static/js/main.b97a22cb.js",
+    "index.html": "/ITViec-Quan/index.html",
+    "main.cc492843.css.map": "/ITViec-Quan/static/css/main.cc492843.css.map",
+    "main.b97a22cb.js.map": "/ITViec-Quan/static/js/main.b97a22cb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc492843.css",
+    "static/js/main.b97a22cb.js"
+  ]
+}
